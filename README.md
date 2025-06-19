@@ -1,3 +1,5 @@
+![status.badge] [![language.badge]][language.url] [![standard.badge]][standard.url]
+
 # openplan
 
 openplan is a C++ library and JSON-based file format for describing building structure — rooms, walls, floors, doors, and devices — for use in home automation, simulation, and visualization.
@@ -50,3 +52,17 @@ The library can render floor plans using Cairo to various formats:
 - PDF
 - SVG
 - PostScript
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
+
+## Copyright
+
+© 2025 Tomaz Stih. All rights reserved.
+
+[language.url]: https://isocpp.org/
+[language.badge]: https://img.shields.io/badge/language-C++-blue.svg
+[standard.url]: https://en.wikipedia.org/wiki/C%2B%2B#Standardization
+[standard.badge]: https://img.shields.io/badge/C%2B%2B-20-blue.svg
+[status.badge]: https://img.shields.io/badge/status-unstable-red.svg
