@@ -19,9 +19,18 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(nlohmann_json)
 
+# Find and require Cairo
+find_package(PkgConfig REQUIRED)
+pkg_check_modules(CAIRO REQUIRED cairo)
+
+# Expose variables to subdirectories
+set(CAIRO_INCLUDE_DIRS ${CAIRO_INCLUDE_DIRS} CACHE INTERNAL "")
+set(CAIRO_LIBRARIES ${CAIRO_LIBRARIES} CACHE INTERNAL "")
+set(CAIRO_CFLAGS_OTHER ${CAIRO_CFLAGS_OTHER} CACHE INTERNAL "")
+
 enable_testing()
 
-# Only call these once
+# Project subdirectories
 add_subdirectory(lib)
 add_subdirectory(src)
 add_subdirectory(test)
