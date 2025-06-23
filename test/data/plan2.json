@@ -1,0 +1,95 @@
+{
+  "building": {
+    "name": "Simple Apartment",
+    "unit": "cm",
+    "floors": [
+      {
+        "name": "Ground floor",
+        "elevation": 0,
+        "walls": [
+          { "start": { "x": 0, "y": 0 }, "end": { "x": 0, "y": 600 }, "thickness": 25 },
+          { "start": { "x": 0, "y": 600 }, "end": { "x": 1000, "y": 600 }, "thickness": 25 },
+          { "start": { "x": 1000, "y": 600 }, "end": { "x": 1000, "y": 0 }, "thickness": 25 },
+          { "start": { "x": 1000, "y": 0 }, "end": { "x": 0, "y": 0 }, "thickness": 25 },
+          { "start": { "x": 400, "y": 0 }, "end": { "x": 400, "y": 300 }, "thickness": 25 },
+          { "start": { "x": 400, "y": 300 }, "end": { "x": 1000, "y": 300 }, "thickness": 25 },
+          { "start": { "x": 600, "y": 300 }, "end": { "x": 600, "y": 600 }, "thickness": 25 }
+        ],
+        "rooms": [
+          {
+            "name": "Living room",
+            "type": "living",
+            "center": { "x": 200, "y": 150 },
+            "size": { "w": 400, "h": 300 },
+            "height": 250
+          },
+          {
+            "name": "Kitchen",
+            "type": "kitchen",
+            "center": { "x": 700, "y": 150 },
+            "size": { "w": 300, "h": 300 },
+            "height": 250
+          },
+          {
+            "name": "Bedroom",
+            "type": "bedroom",
+            "center": { "x": 800, "y": 450 },
+            "size": { "w": 200, "h": 150 },
+            "height": 250
+          },
+          {
+            "name": "Bathroom",
+            "type": "bathroom",
+            "center": { "x": 650, "y": 450 },
+            "size": { "w": 100, "h": 150 },
+            "height": 250
+          },
+          {
+            "name": "Hall",
+            "type": "hall",
+            "center": { "x": 200, "y": 450 },
+            "size": { "w": 300, "h": 150 },
+            "height": 250
+          }
+        ],
+        "openings": [
+          {
+            "type": "door",
+            "position": { "x": 200, "y": 600 },
+            "size": { "w": 80, "h": 20 },
+            "wall_normal": { "x": 0, "y": 1 },
+            "margin": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+          },
+          {
+            "type": "door",
+            "position": { "x": 400, "y": 300 },
+            "size": { "w": 20, "h": 80 },
+            "wall_normal": { "x": 1, "y": 0 },
+            "margin": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+          },
+          {
+            "type": "door",
+            "position": { "x": 600, "y": 400 },
+            "size": { "w": 20, "h": 80 },
+            "wall_normal": { "x": 1, "y": 0 },
+            "margin": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+          },
+          {
+            "type": "window",
+            "position": { "x": 1000, "y": 150 },
+            "size": { "w": 20, "h": 100 },
+            "wall_normal": { "x": 1, "y": 0 },
+            "margin": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+          },
+          {
+            "type": "window",
+            "position": { "x": 1000, "y": 500 },
+            "size": { "w": 20, "h": 100 },
+            "wall_normal": { "x": 1, "y": 0 },
+            "margin": { "top": 0, "bottom": 0, "left": 0, "right": 0 }
+          }
+        ]
+      }
+    ]
+  }
+}

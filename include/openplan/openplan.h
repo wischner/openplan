@@ -64,4 +64,6 @@ namespace openplan
     // Public API function
     Building load_building(const std::string &path);
 
+    bool draw_floor(const Building &building, int floor_index, const std::string &filename);
+
 } // namespace openplan
