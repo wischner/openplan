@@ -1,4 +1,4 @@
-add_executable(openplan main.cpp)
+add_executable(opview main.cpp)
 
-target_link_libraries(openplan PRIVATE openplan_lib)
-target_include_directories(openplan PRIVATE ${CMAKE_SOURCE_DIR}/include)
+target_link_libraries(opview PRIVATE openplan)
+target_include_directories(opview PRIVATE ${CMAKE_SOURCE_DIR}/include)
