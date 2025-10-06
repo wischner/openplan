@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="Home Automation Example">
+  <bounds minlat="52.5200" minlon="13.4050" maxlat="52.5201" maxlon="13.4051"/>
+  
+  <!-- Building outline -->
+  <way id="1" version="1">
+    <nd ref="1"/>
+    <nd ref="2"/>
+    <nd ref="3"/>
+    <nd ref="4"/>
+    <nd ref="1"/>  <!-- Closed -->
+    <tag k="building" v="yes"/>
+    <tag k="min_level" v="0"/>
+    <tag k="max_level" v="0"/>
+    <tag k="height" v="3"/>  <!-- 3m tall house -->
+  </way>
+  
+  <!-- Living room (closed way) -->
+  <way id="2" version="1">
+    <nd ref="5"/>
+    <nd ref="6"/>
+    <nd ref="7"/>
+    <nd ref="8"/>
+    <nd ref="5"/>  <!-- Closed -->
+    <tag k="indoor" v="room"/>
+    <tag k="level" v="0"/>
+    <tag k="name" v="Living Room"/>
+    <tag k="height" v="2.5"/>  <!-- Room height -->
+  </way>
+  
+  <!-- Kitchen (adjacent, shares door node) -->
+  <way id="3" version="1">
+    <nd ref="7"/>  <!-- Shared door node -->
+    <nd ref="9"/>
+    <nd ref="10"/>
+    <nd ref="11"/>
+    <nd ref="7"/>  <!-- Closed -->
+    <tag k="indoor" v="room"/>
+    <tag k="level" v="0"/>
+    <tag k="name" v="Kitchen"/>
+    <tag k="height" v="2.5"/>
+  </way>
+  
+  <!-- Door between living room and kitchen -->
+  <node id="7" lat="52.52005" lon="13.40505" version="1">
+    <tag k="door" v="yes"/>
+    <tag k="level" v="0"/>
+    <tag k="name" v="Living-Kitchen Door"/>
+  </node>
+  
+  <!-- Smart light in living room -->
+  <node id="12" lat="52.52002" lon="13.40502" version="1">
+    <tag k="highway" v="poi"/>  <!-- Generic POI for devices -->
+    <tag k="device" v="light"/>
+    <tag k="level" v="0"/>
+    <tag k="name" v="Ceiling Light"/>
+    <tag k="device_id" v="light_001"/>
+    <tag k="protocol" v="zigbee"/>
+  </node>
+  
+  <!-- Thermostat in kitchen -->
+  <node id="13" lat="52.52007" lon="13.40507" version="1">
+    <tag k="highway" v="poi"/>
+    <tag k="device" v="thermostat"/>
+    <tag k="level" v="0"/>
+    <tag k="name" v="Kitchen Thermostat"/>
+    <tag k="device_id" v="thermo_001"/>
+    <tag k="protocol" v="wifi"/>
+  </node>
+  
+  <!-- Nodes for geometry (approximate 10m x 10m layout) -->
+  <node id="1" lat="52.52000" lon="13.40500" version="1"/>
+  <node id="2" lat="52.52000" lon="13.40510" version="1"/>
+  <node id="3" lat="52.52010" lon="13.40510" version="1"/>
+  <node id="4" lat="52.52010" lon="13.40500" version="1"/>
+  <node id="5" lat="52.52001" lon="13.40501" version="1"/>
+  <node id="6" lat="52.52001" lon="13.40505" version="1"/>
+  <node id="8" lat="52.52005" lon="13.40501" version="1"/>
+  <node id="9" lat="52.52005" lon="13.40509" version="1"/>
+  <node id="10" lat="52.52009" lon="13.40509" version="1"/>
+  <node id="11" lat="52.52009" lon="13.40505" version="1"/>
+</osm>

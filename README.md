@@ -2,7 +2,7 @@
 
 # openplan
 
-openplan is a C++ library and XML-based file format for describing building structure — rooms, walls, floors, doors, and devices — for use in home automation, simulation, and visualization. it is compatible with open street map [simple indoor tagging](https://wiki.openstreetmap.org/wiki/Simple_Indoor_Tagging)
+openplan is a C++ library and XML-based file format for describing building structure — rooms, walls, floors, doors, and devices — for use in home automation, simulation, and visualization. it is compatible with open street map [simple indoor tagging](https://wiki.openstreetmap.org/wiki/Simple_Indoor_Tagging) and the JOSM tool.
 
 ## Prerequisites
 
